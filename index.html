@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohit Bhusawale – AWS & DevOps Engineer. Cloud | DevOps | Automation | Kubernetes | AWS. 2+ years building and automating mission-critical deployments." />
+  <meta name="keywords" content="Rohit Bhusawale, DevOps Engineer, AWS Engineer, Cloud Engineer, Kubernetes, Terraform, Jenkins, CI/CD" />
+  <meta name="author" content="Rohit Mohanrao Bhusawale" />
+  <meta property="og:title" content="Rohit Bhusawale – AWS & DevOps Engineer" />
+  <meta property="og:description" content="Cloud | DevOps | Automation | Kubernetes | AWS" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rohitbhusawale.dev" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index, follow" />
+  <title>Rohit Bhusawale – AWS & DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-bracket">{</span>
+        <span class="loader-initials">RB</span>
+        <span class="loader-bracket">}</span>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-text">Initializing...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Canvas for particles -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Social Icons -->
+  <aside class="floating-social" aria-label="Social links">
+    <a href="mailto:rohitbhusawale2000@gmail.com" aria-label="Email" title="Email"><span class="icon-wrap">✉</span></a>
+    <a href="https://linkedin.com/in/rohit-bhusawale" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><span class="icon-wrap">in</span></a>
+    <a href="https://github.com/rohit-bhusawale" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><span class="icon-wrap">⌥</span></a>
+  </aside>
+
+  <!-- Navigation -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">{</span>RB<span class="logo-bracket">}</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span class="theme-icon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-up">👋 Hello, I'm</p>
+        <h1 class="hero-name reveal-up">Rohit <span class="accent">Bhusawale</span></h1>
+        <div class="hero-title-wrap reveal-up">
+          <span class="hero-title-static">I'm a&nbsp;</span>
+          <span class="typewriter" id="typewriter" aria-live="polite"></span>
+        </div>
+        <p class="hero-sub reveal-up">Cloud · DevOps · Automation · Kubernetes · AWS</p>
+        <div class="hero-tags reveal-up" aria-label="Key skills">
+          <span class="tag">AWS Certified</span>
+          <span class="tag">2+ Years Exp</span>
+          <span class="tag">Wipro · DevOps</span>
+        </div>
+        <div class="hero-cta reveal-up">
+          <a href="assets/resume/Rohit_Devops_Resume.pdf" download class="btn btn-primary">
+            <span>⬇</span> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="#projects" class="btn btn-ghost">View Projects →</a>
+        </div>
+        <div class="hero-scroll-hint reveal-up" aria-hidden="true">
+          <span>scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="orbit-ring ring-3"></div>
+        <div class="hero-avatar">
+          <span class="avatar-text">RB</span>
+        </div>
+        <div class="orbit-icon oi-1">☁</div>
+        <div class="orbit-icon oi-2">⚙</div>
+        <div class="orbit-icon oi-3">⬡</div>
+        <div class="orbit-icon oi-4">⚡</div>
+        <div class="orbit-icon oi-5">🔧</div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Who I Am</span>
+          <h2 id="about-heading">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p class="about-lead">An accomplished and result-oriented DevOps engineer with <strong>2+ years of experience</strong> in the IT industry, specializing in automating and optimizing mission-critical deployments across production servers and cloud environments.</p>
+            <p>I work at the intersection of development and operations — building CI/CD pipelines, containerizing applications, provisioning cloud infrastructure with Terraform, and enforcing cost-efficient AWS governance strategies. Currently at <strong>Wipro Limited</strong> as a DevOps Engineer, I've reduced cloud costs by 25%, cut provisioning time by 60%, and improved deployment speed by 40%.</p>
+            <p>I hold dual AWS certifications and am passionate about GitOps, IaC, and building systems that scale reliably and cost-effectively.</p>
+            <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">Let's Connect →</a>
+          </div>
+          <div class="about-stats reveal-right">
+            <div class="stat-card glass">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number" data-target="60">0</span>
+              <span class="stat-suffix">%</span>
+              <span class="stat-label">Faster Provisioning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">What I Work With</span>
+          <h2 id="skills-heading">Technical Skills</h2>
+        </div>
+
+        <div class="skills-filter reveal-up" role="group" aria-label="Filter skills">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cloud">Cloud</button>
+          <button class="filter-btn" data-filter="devops">DevOps</button>
+          <button class="filter-btn" data-filter="containers">Containers</button>
+          <button class="filter-btn" data-filter="iac">IaC</button>
+          <button class="filter-btn" data-filter="lang">Languages</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+
+          <!-- Cloud -->
+          <div class="skill-card glass reveal-up" data-category="cloud">
+            <div class="skill-card-header">
+              <span class="skill-icon">☁</span>
+              <h3>AWS Cloud</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">EC2</span><span class="stag">S3</span><span class="stag">VPC</span>
+              <span class="stag">RDS</span><span class="stag">ELB</span><span class="stag">Auto Scaling</span>
+              <span class="stag">Route 53</span><span class="stag">CloudWatch</span><span class="stag">Lambda</span>
+              <span class="stag">EBS</span><span class="stag">IAM</span>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-level="88">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span class="skill-bar-label">88%</span>
+            </div>
+          </div>
+
+          <!-- CI/CD -->
+          <div class="skill-card glass reveal-up" data-category="devops">
+            <div class="skill-card-header">
+              <span class="skill-icon">⚙</span>
+              <h3>CI/CD & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">Jenkins</span><span class="stag">Git</span><span class="stag">GitHub</span>
+              <span class="stag">Maven</span><span class="stag">SonarQube</span><span class="stag">JIRA</span>
+              <span class="stag">ArgoCD</span><span class="stag">Codeguru</span>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-level="85">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span class="skill-bar-label">85%</span>
+            </div>
+          </div>
+
+          <!-- Containers -->
+          <div class="skill-card glass reveal-up" data-category="containers">
+            <div class="skill-card-header">
+              <span class="skill-icon">⬡</span>
+              <h3>Containers</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">Docker</span><span class="stag">Kubernetes</span>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-level="82">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span class="skill-bar-label">82%</span>
+            </div>
+          </div>
+
+          <!-- IaC -->
+          <div class="skill-card glass reveal-up" data-category="iac">
+            <div class="skill-card-header">
+              <span class="skill-icon">📋</span>
+              <h3>Infrastructure as Code</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">Terraform</span><span class="stag">Ansible</span>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-level="83">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span class="skill-bar-label">83%</span>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-card glass reveal-up" data-category="lang">
+            <div class="skill-card-header">
+              <span class="skill-icon">💻</span>
+              <h3>Languages & Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">Shell Scripting</span><span class="stag">Python</span><span class="stag">Java</span>
+              <span class="stag">Spring Boot</span><span class="stag">Quarkus</span>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-level="75">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span class="skill-bar-label">75%</span>
+            </div>
+          </div>
+
+          <!-- OS -->
+          <div class="skill-card glass reveal-up" data-category="devops">
+            <div class="skill-card-header">
+              <span class="skill-icon">🐧</span>
+              <h3>Operating Systems</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">Linux</span>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-level="85">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span class="skill-bar-label">85%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Where I've Worked</span>
+          <h2 id="exp-heading">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <!-- Wipro -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="timeline-card glass">
+              <div class="tlc-header">
+                <div>
+                  <span class="tlc-company">Wipro Limited</span>
+                  <h3 class="tlc-role">DevOps Engineer</h3>
+                </div>
+                <span class="tlc-date">Oct 2024 – Present</span>
+              </div>
+              <ul class="tlc-list">
+                <li>Migrated client Jenkins freestyle jobs to <strong>parallel staged declarative pipelines</strong> and automated post-delivery steps with shell scripts, significantly streamlining build &amp; test cycles.</li>
+                <li>Automated deployment and monitoring using <strong>AWS CloudWatch</strong> and <strong>Lambda</strong>, cutting cloud operational costs by <strong>25%</strong>.</li>
+                <li>Enforced AWS governance policies including tagging strategies, instance type optimization, and data storage management for improved cost efficiency.</li>
+                <li>Built and deployed <strong>containerized applications</strong> with Docker &amp; Kubernetes, boosting scalability and deployment speed by <strong>40%</strong>.</li>
+                <li>Developed Terraform scripts from scratch for AWS components (EC2, VPC, S3, EBS, RDS, ELB, Autoscaling), achieving a <strong>60% reduction in provisioning time</strong>.</li>
+              </ul>
+              <div class="tlc-tags">
+                <span class="stag">Jenkins</span><span class="stag">Terraform</span><span class="stag">AWS</span>
+                <span class="stag">Docker</span><span class="stag">Kubernetes</span><span class="stag">CloudWatch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intellipaat -->
+          <div class="timeline-item reveal-right">
+            <div class="timeline-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="timeline-card glass">
+              <div class="tlc-header">
+                <div>
+                  <span class="tlc-company">Intellipaat Software Solutions Pvt Ltd.</span>
+                  <h3 class="tlc-role">Cloud & DevOps Engineer (Intern)</h3>
+                </div>
+                <span class="tlc-date">Jan 2024 – Sep 2024</span>
+              </div>
+              <ul class="tlc-list">
+                <li>Selected for an intensive Cloud and DevOps internship program focusing on industry-relevant tools and practices.</li>
+                <li>Gained hands-on experience in cloud computing environments and DevOps workflows across AWS and automation toolchains.</li>
+                <li>Collaborated with team members to implement DevOps strategies and understand real-world project requirements.</li>
+              </ul>
+              <div class="tlc-tags">
+                <span class="stag">AWS</span><span class="stag">DevOps</span><span class="stag">CI/CD</span><span class="stag">Ansible</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-alt" aria-labelledby="cert-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Validated Expertise</span>
+          <h2 id="cert-heading">Certifications</h2>
+        </div>
+        <div class="cert-grid">
+
+          <div class="cert-card glass reveal-up">
+            <div class="cert-badge aws-badge">
+              <span>AWS</span>
+            </div>
+            <div class="cert-info">
+              <h3>AWS Certified Solutions Architect</h3>
+              <p class="cert-sub">Associate Level</p>
+              <p class="cert-date">Achieved September 2025</p>
+              <span class="cert-issuer">Amazon Web Services</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass reveal-up">
+            <div class="cert-badge aws-badge">
+              <span>AWS</span>
+            </div>
+            <div class="cert-info">
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p class="cert-sub">Foundational Level</p>
+              <p class="cert-date">Achieved July 2025</p>
+              <span class="cert-issuer">Amazon Web Services</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass reveal-up">
+            <div class="cert-badge ip-badge">
+              <span>IP</span>
+            </div>
+            <div class="cert-info">
+              <h3>AWS Solution Architect Associate</h3>
+              <p class="cert-sub">Professional Training</p>
+              <p class="cert-date">Achieved August 2025</p>
+              <span class="cert-issuer">Intellipaat</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass reveal-up">
+            <div class="cert-badge ip-badge">
+              <span>IP</span>
+            </div>
+            <div class="cert-info">
+              <h3>DevOps Training</h3>
+              <p class="cert-sub">Professional Training</p>
+              <p class="cert-date">Achieved August 2025</p>
+              <span class="cert-issuer">Intellipaat</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" aria-labelledby="proj-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">What I've Built</span>
+          <h2 id="proj-heading">Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card glass reveal-up">
+            <div class="proj-accent"></div>
+            <div class="proj-top">
+              <div class="proj-icon">☁</div>
+              <div class="proj-links">
+                <a href="https://github.com/rohit-bhusawale" target="_blank" rel="noopener" class="proj-link-btn" aria-label="View on GitHub">GitHub ↗</a>
+                <span class="proj-link-btn disabled" aria-disabled="true">Demo –</span>
+              </div>
+            </div>
+            <h3 class="proj-title">AWS Multi-Tier Application Deployment</h3>
+            <p class="proj-desc">Deployed a PHP application on a highly available multi-tier architecture using EC2, RDS, and an Elastic Load Balancer. Implemented Auto Scaling to handle variable traffic and used Route 53 for DNS routing and health checks.</p>
+            <ul class="proj-highlights">
+              <li>✔ ELB load balancing across availability zones</li>
+              <li>✔ RDS multi-AZ for database high availability</li>
+              <li>✔ Auto Scaling based on CPU thresholds</li>
+              <li>✔ Route 53 health-check routing</li>
+            </ul>
+            <div class="proj-tags">
+              <span class="stag aws-tag">EC2</span>
+              <span class="stag aws-tag">RDS</span>
+              <span class="stag aws-tag">ELB</span>
+              <span class="stag aws-tag">Auto Scaling</span>
+              <span class="stag aws-tag">Route 53</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal-up">
+            <div class="proj-accent"></div>
+            <div class="proj-top">
+              <div class="proj-icon">⚙</div>
+              <div class="proj-links">
+                <a href="https://github.com/rohit-bhusawale" target="_blank" rel="noopener" class="proj-link-btn" aria-label="View on GitHub">GitHub ↗</a>
+                <span class="proj-link-btn disabled" aria-disabled="true">Demo –</span>
+              </div>
+            </div>
+            <h3 class="proj-title">CI/CD Pipeline Using Jenkins</h3>
+            <p class="proj-desc">Designed and implemented a full CI/CD pipeline using Jenkins for automated software delivery. Configured automatic build triggers on code commits, compiled and tested with Maven, and deployed via Tomcat for continuous delivery.</p>
+            <ul class="proj-highlights">
+              <li>✔ Automatic builds triggered on GitHub commits</li>
+              <li>✔ Maven for compile, test, and package stages</li>
+              <li>✔ SonarQube integration for code quality gates</li>
+              <li>✔ Tomcat deployment through Jenkins CI job</li>
+            </ul>
+            <div class="proj-tags">
+              <span class="stag">Jenkins</span>
+              <span class="stag">Maven</span>
+              <span class="stag">GitHub</span>
+              <span class="stag">Tomcat</span>
+              <span class="stag">SonarQube</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt" aria-labelledby="edu-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 id="edu-heading">Education</h2>
+        </div>
+        <div class="edu-timeline">
+
+          <div class="edu-item reveal-left">
+            <div class="edu-year glass">2022</div>
+            <div class="edu-card glass">
+              <h3>Bachelor of Technology</h3>
+              <p class="edu-inst">DKTE's Textile & Engineering Institute</p>
+              <p class="edu-loc">Ichalkaranji, Kolhapur</p>
+              <span class="edu-date">Aug 2018 – June 2022</span>
+            </div>
+          </div>
+
+          <div class="edu-item reveal-right">
+            <div class="edu-year glass">2018</div>
+            <div class="edu-card glass">
+              <h3>12th – Science Stream</h3>
+              <p class="edu-inst">Vasantrao Naik Junior College of Science</p>
+              <p class="edu-loc">Maharashtra, India</p>
+              <span class="edu-date">2018</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-heading">Contact Me</h2>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-info reveal-left">
+            <p class="contact-lead">Whether it's a job opportunity, a DevOps challenge to solve, or just a conversation about cloud infrastructure — I'm always open. Reach out anytime.</p>
+            <div class="contact-items">
+              <a href="tel:+919421745596" class="contact-item glass">
+                <span class="ci-icon">📞</span>
+                <div>
+                  <span class="ci-label">Phone</span>
+                  <span class="ci-value">+91-9421745596</span>
+                </div>
+              </a>
+              <a href="mailto:rohitbhusawale2000@gmail.com" class="contact-item glass">
+                <span class="ci-icon">✉</span>
+                <div>
+                  <span class="ci-label">Email</span>
+                  <span class="ci-value">rohitbhusawale2000@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/rohit-bhusawale" target="_blank" rel="noopener" class="contact-item glass">
+                <span class="ci-icon">in</span>
+                <div>
+                  <span class="ci-label">LinkedIn</span>
+                  <span class="ci-value">rohit-bhusawale</span>
+                </div>
+              </a>
+              <a href="https://github.com/rohit-bhusawale" target="_blank" rel="noopener" class="contact-item glass">
+                <span class="ci-icon">⌥</span>
+                <div>
+                  <span class="ci-label">GitHub</span>
+                  <span class="ci-value">rohit-bhusawale</span>
+                </div>
+              </a>
+              <div class="contact-item glass">
+                <span class="ci-icon">📍</span>
+                <div>
+                  <span class="ci-label">Location</span>
+                  <span class="ci-value">Maharashtra, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal-right">
+            <form id="contact-form" class="contact-form glass" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading" hidden>Sending...</span>
+              </button>
+              <div id="form-success" class="form-success" hidden role="alert">
+                <span>✔</span> Message sent successfully! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="footer-logo">{RB}</span>
+        <p>AWS & DevOps Engineer<br/>Cloud · Automation · Scale</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="footer-social-icons">
+          <a href="https://linkedin.com/in/rohit-bhusawale" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/rohit-bhusawale" target="_blank" rel="noopener" aria-label="GitHub">⌥</a>
+          <a href="mailto:rohitbhusawale2000@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Rohit Mohanrao Bhusawale. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
